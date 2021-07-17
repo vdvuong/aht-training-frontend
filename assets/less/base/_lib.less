@@ -1,0 +1,190 @@
+/* ------------------------------ Library Styles ---------------------------- */
+
+/* Color Argument */
+@main-color: #0ca8c9;
+@black: #000;
+@white: #fff;
+@grey-white-bg: #f5f5f5;
+@grey-white: #ebebeb;
+@grey-text: #bababa;
+@grey-black : #8f8f8f;
+@top-bg : #222;
+@footer-bg: #f2f2f2;
+@slider-btn: #082b4f;
+@preloader-color1: #f44336;
+@preloader-color2: #673ab7;
+
+/* Mixins */
+.text-value (@_font-size : @font-size, @_line-height : @line-height, @_font-weight : @font-weight, @_letter-spacing : @letter-spacing) {
+    font-size: @_font-size;
+    line-height: @_line-height;
+    font-weight: @_font-weight;
+    letter-spacing: @_letter-spacing;	    	
+
+}
+
+.slider-action (@_value : @value)
+{
+    -webkit-transition: @_value;
+    -o-transition: @_value;
+    transition: @_value;
+}
+
+.hover-action (@_transform)
+{
+    -webkit-transform: scale(@_transform) translateZ(0);
+    transform: scale(@_transform) translateZ(0);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.flex-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.jc-space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.jc-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.jc-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.text-center { text-align: center; }
+
+.text-upper { text-transform: uppercase; }
+
+/* Page Preloader Properties */
+.loader-properties (@_webkit-transform : @webkit-transform, @_transform : @transform, @_border : @border, @_border-left-color : @border-left-color) {
+    -webkit-transform: rotate(@_webkit-transform);
+    transform: rotate(@_transform);
+    border: 4px solid @_border;
+    border-left-color: @_border-left-color;
+}
+
+/* Preloader Action */
+@border-left-color: transparent;
+
+@keyframes loader {
+	0% {
+        .loader-properties(0deg, 0deg, @preloader-color1);
+	}
+	50% {
+        .loader-properties(180deg, 180deg, @preloader-color2);
+	}
+	100% {
+
+        .loader-properties(360deg, 360deg, @preloader-color1);
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+        .loader-properties(0deg, 0deg, @preloader-color1);
+	}
+	50% {
+        .loader-properties(180deg, 180deg, @preloader-color2);
+	}
+	100% {
+        .loader-properties(360deg, 360deg, @preloader-color1);
+	}
+}
+
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: @black;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+/* Rotate Properties */
+.rotate-properties (@_value : @value)
+{
+    -webkit-transform: rotate(@_value);
+    -moz-transform: rotate(@_value);
+    -o-transform: rotate(@_value);
+}
+
+/* Rotate Animation */
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes itemRotate {
+    from{
+        .rotate-properties(0deg);
+    }
+    to{
+        .rotate-properties(360deg);
+    }
+}
+
+/* Standard syntax */ 
+@keyframes itemRotate {
+    from{
+        .rotate-properties(0deg);
+    }
+    to{
+        .rotate-properties(360deg);
+    }
+}
+
+.itemRotate(@_time : @time) {
+    animation: itemRotate @_time linear 0s infinite;
+    -webkit-animation: itemRotate @_time linear 0s infinite;
+    -moz-animation: itemRotate @_time linear 0s infinite;
+    -o-animation: itemRotate @_time linear 0s infinite;
+}
+
+/* Zoom Animation */
+@keyframes zoom_in {
+    0%{transform: scale(0.5);opacity: 0}
+    100%{transform: scale(1);opacity:1}
+}
+
+@keyframes zoom_out {
+    0%{transform: scale(1.05);opacity: 0}
+    100%{transform: scale(1);opacity:1}
+}
+ 

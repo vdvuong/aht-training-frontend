@@ -1,0 +1,359 @@
+/* ------------------------------ Header Styles ---------------------------- */
+
+/* Header Top Secion */
+.flag-text {
+    .text-value(12px, 13px, 500, 0);
+    height: 12px;
+    color: @grey-text;
+}
+
+.header-top {
+    background-color: @top-bg;
+    padding: 20px 0 18px 0;
+    .inner-ht {
+        .flex-display;
+        .jc-space-between;
+
+        /* Basic Infor Section */
+        .inner-ht__infor {
+            .flex-display;
+            .jc-start;
+            a { 
+                margin-right: 12px; 
+            }
+            li {
+                .flex-display;
+                ul {
+                    .flex-display;
+                    .jc-start;
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid @main-color;
+                        padding: 8px 6px;
+                        i {
+                            .text-value (16px, 13px, 0, 0);
+                            text-align: center;
+                            width: 19px;
+                            height: 16px;
+                            color: @main-color;
+                        }
+                    }
+
+                    .text {
+                        .flex-display;
+                        .flex-direction-column;
+                        padding: 0 10px;
+                        span {
+                            .text-value(12px, 16px, 500, 0);
+                            display: block;
+                            color: @grey-text;
+                        }
+
+                        span:last-child {
+                            color: @white;
+                        }
+                    }
+
+                    &:hover {
+                        .icon {
+                            .hover-action(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Language Selector Section */
+        &__lan-selector {
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 0px;
+            margin-right: -12px;
+            .ddcommon {
+                max-width: 142px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                outline: none;
+                cursor: pointer;
+                padding: 0 20px;
+                .ddTitle {
+                    position: relative;
+                    .ddTitleText {
+                        img {
+                            padding-right: 5px;
+                        }
+
+                        span {
+                            position: relative;
+                            top: -2px;
+                            font-size: 13px;
+                            margin-left: 4px;
+                            color: @grey-text;
+                        }
+                    }
+
+                    .ddArrow:before {
+                        content: '3';
+                        font-family: 'ElegantIcons';
+                        font-size: 13px;
+                        color: @grey-black;
+                        float: right;
+                        position: relative;
+                        right: -10px;
+                        line-height: 26px;
+                    }
+                }
+
+                .ddChild {
+                    background: @top-bg + #111;
+                    max-width: 142px;
+                    width: 100%;
+                    top: 50px !important;
+                    ul {
+                        width: 100%;
+                        max-width: 142px;
+                        li {
+                            line-height: 23px;
+                            padding: 0px 10px;
+                            list-style: none;
+                            img {
+                                padding-right: 10px;
+                                span {
+                                    width: 129px;
+                                    .flag-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            span {
+                .flag-text;
+            }
+        }
+    }
+}
+
+
+/* Header Logo Secion */
+.header-logo {
+    background-color: @white;
+    padding: 26px 0 15px;
+    .inner-hl {
+        .flex-display;
+        .jc-space-between;
+        &__left:hover {
+            img {
+                .hover-action(1.02);
+            }
+        }
+
+        &__right {
+            .flex-display;
+            .input-group {
+                padding: 3px 0px;
+                position: relative;
+                .category-select {
+                    .text-value(12px, 24px, 600, 0.41px);
+                    background: transparent;
+                    z-index: 99;
+                    border: none;
+                    position: absolute;
+                    color: @grey-black;
+                    padding: 12px 0 12px 18px;
+                    &:before {
+                        position: absolute;
+                        width: 1px;
+                        height: 23px;
+                        background: @grey-text;
+                        content: '';
+                    }
+
+                    &:after {
+                        position: absolute;
+                        content: '3';
+                        font-family: 'ElegantIcons';
+                        font-size: 16px;
+                        color: @grey-black;
+                    }
+                }
+
+                input {
+                    .text-value(12px, 24px, 600, 0.41px);
+                    padding: 0 215px 0 175px;
+                    height: 40px;
+                    border-radius: 20px;
+                    background-color: @white;
+                    border: 1px solid @grey-white;
+                    color: @grey-black;
+                }
+
+                button {
+                    font-size: 16px;
+                    top: 6%;
+                    right: 0;
+                    height: 68%;
+                    color: @white;
+                    position: absolute;
+                    border: none;
+                    border-radius: 0 20px 20px 0;
+                    background-color: @main-color;
+                    padding: 8px 25px 8px 17px;
+                    cursor: pointer;
+
+                    i {
+                        font-weight: 600;
+                    }
+
+                    &:hover {
+                        background-color: @main-color - #111;
+                    }
+                }
+            }
+
+            .nav-right {
+                .flex-display;
+                padding-left: 10px;
+                    &__item {
+                    padding: 12px 8px 0 10px;
+                    a {
+                        i {
+                            font-size: 26px;
+                            line-height: 24px;
+                            color: @main-color;
+                            text-align: center;
+                        }
+
+                        .size {
+                            position: relative;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 8px;
+                            top: -35px;
+                            right: -18px;
+                            background-color: @top-bg;
+                            span {
+                                font-size: 11px;
+                                display: block;
+                                padding: 0 5px;
+                                font-weight: 500;
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+
+                li:first-child:hover {
+                    i {
+                      .itemRotate(0.5s);
+                    }
+                }
+
+                li:last-child:hover {
+                    .hover-action(1.1);
+                }
+            }
+        }
+    }
+}
+
+/* Header Navbar Section */
+.header-nav {
+	background: @main-color;
+    .inner-hv {
+        .flex-display;
+        .jc-space-between;
+        width: 100%;
+        margin-left: 15px;
+        position: relative;
+        &__cate {
+            background: @main-color;
+            color: @white;
+            padding: 9px 0;
+            cursor: pointer;
+            img { 
+                padding-right: 12px;
+                position: relative;
+                top: 5px;
+            }
+
+            span {
+                .text-value(14px, 29px, 600, 0);
+                color: @white;
+                position: relative;
+                top: -1px;
+            }
+
+            .cate-hover {
+                position: absolute;
+                width: 260px;
+                background: @white;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-box-shadow: 0 13px 32px @grey-text;
+                box-shadow: 0 13px 32px @grey-text;
+                -webkit-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+                li {
+                    list-style: none;
+                    a {
+                        .text-value(15px, 45px, 400, 0);
+                        display: block;
+                        color: @black;
+                        padding: 4px 30px 5px 40px;
+                        -webkit-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                        transition: all 0.3s;
+                        border-bottom: solid 1px @grey-white;
+                    }
+                }
+
+                li a:hover {
+                    color: @main-color;
+                }
+            }
+        }
+        
+        &__cate:hover .cate-hover {
+            margin-top: 11px;
+            opacity: 1;
+            visibility: visible;
+            z-index: 99;
+        }
+
+        &__menu {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            overflow: hidden;
+            text-transform: uppercase;
+            padding: 12px 0;
+            li {
+                list-style: none;
+                display: inline-block;
+                a {
+                    .text-value (14px, 24px, 600, 0);
+                    color: @white;
+                    padding: 15.5px 29px 14.5px;
+                } 
+
+                &:last-child {
+                    a { 
+                        padding: 15.5px 16px 14.5px 28px; 
+                    }
+                }
+
+                &:hover a {
+                    background: @grey-text;
+                }
+            }
+
+            .nav-icon {
+                display: none;
+            }
+        }
+    }
+}

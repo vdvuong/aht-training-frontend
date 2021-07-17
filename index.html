@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MedyPlus | VuDucVuong | AHT Training Course">
+    <meta name="keywords" content="MedyPlus | VuDucVuong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedyPlus | VuDucVuong</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+            
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="assets/images/icon.png"/>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet/less" href="assets/less/_style.less" type="text/css" />
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <div class="header">
+        <!-- Top section of header include: Information (Address, Email, Phone) and select language -->
+        <div class="header-top">
+            <div class="container">
+                <div class="inner-ht">
+                    <!-- Left of top header include: Information (Address, Email, Phone)-->
+                    <ul class="inner-ht__infor">
+                        <li>
+                            <a href="#">
+                                <ul>
+                                    <li class="icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </li>
+                                    <li class="text">
+                                        <span>Find us</span>
+                                        <span>325 admiral unit, North cost, USA</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:admin@medyplus.com">
+                                <ul>
+                                    <li class="icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </li>
+                                    <li class="text">
+                                        <span>Email Us</span>
+                                        <span>admin@medyplus.com</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:002-01008431112">
+                                <ul>
+                                    <li class="icon">
+                                        <i class=" fa fa-phone"></i>
+                                    </li>
+                                    <li class="text">
+                                        <span>Call Us Now</span>
+                                        <span>002 - 0100 843 1112</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Left of top header include: select language-->
+                    <div class="inner-ht__lan-selector">
+                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                            <option value="yt" data-image="assets/images/flag-1.png" data-imagecss="flag yt" data-title="English">English</option>
+                            <option value="yu" data-image="assets/images/flag-2.png" data-imagecss="flag yu" data-title="Vietnam">Vietnam</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo section of header include: Logo, search, setting and cart -->
+        <div class="header-logo">
+            <div class="container">
+                <div class="inner-hl">
+                    <!-- Logo image section -->
+                    <div class="inner-hl__left">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="assets/images/header/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Search section -->
+                    <div class="inner-hl__right">
+                        <div class="input-group">
+                            <select name="category" class="category-select">
+                                <option value="1">All Category</option>
+                                <option value="2">Baby & Child Care</option>
+                                <option value="3">Sexual Health</option>
+                            </select>
+                            <input type="text" placeholder="Search for Product..">
+                            <button type="button" class="btn"><i class="ti-search"></i></button>
+                        </div>
+                        <ul class="nav-right">
+                            <li class="nav-right__item">
+                                <a href="#">
+                                    <i class="fa icon_cog"></i>
+                                </a>
+                            </li>
+                            <li class="nav-right__item">
+                                <a href="#">
+                                    <i class="fa icon_bag_alt"></i>
+                                    <div class="size"><span class="text">2</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar section of header include: Navbar select and menu -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="inner-hv">
+                        <!--Navbar select in dropdown-list-->
+                        <div class="inner-hv__cate" id="myCatenav">
+                            <img src="assets/images/header/cate.png" alt="">
+                            <span class="text-upper">CATEGORIES</span>
+                            <ul class="cate-hover">
+                                <li><a href="#">Baby & Child Care</a></li>
+                                <li><a href="#">Sexual Health</a></li>
+                                <li><a href="#">Cosmetics</a></li>
+                                <li><a href="#">Diet & Nutrition</a></li>
+                                <li><a href="#">Gift & Specialty</a></li>
+                                <li><a href="#">Household Items</a></li>
+                                <li><a href="#">Medicine Cabinet</a></li>
+                                <li><a href="#">Natural Product</a></li>
+                            </ul>
+                        </div>
+                        <!--Menu-->
+                        <ul class="inner-hv__menu" id="myTopnav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="nav-icon" onclick="nav_menu()">&#9776;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    
+    <!-- Slider Section Begin -->
+    <div class="slider">
+        <div class="inner-slider">
+            <!-- Slider item 1 -->
+            <div  class="inner-slider__item active">
+               <img src="assets/images/slider/slider_1.jpg" alt="" />
+               <div class="caption">
+                    <div class="container">
+                        <div class="inner-caption">
+                            <div class="inner-caption__big-text">
+                                    <h1 class="first-line">Find Any
+                                    <span class="special-text">Medicine</span></h1>
+                                    <h1 class="second-line">You Need!</h1>
+                            </div>
+                            <div class="inner-caption__small-text">
+                                <p>Free Standard Shipping Everyday</p>
+                                <a href="#" class="btn-shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Slider item 1 -->
+            <div  class="inner-slider__item">
+               <img src="assets/images/slider/slider_2.jpg" alt="" />
+               <div class="caption">
+                    <div class="container">
+                        <div class="inner-caption">
+                            <div class="inner-caption__big-text">
+                                    <h1 class="first-line">Find Any
+                                    <span class="special-text">Medicine</span></h1>
+                                    <h1 class="second-line">You Need!</h1>
+                            </div>
+                            <div class="inner-caption__small-text">
+                                <p>Free Standard Shipping Everyday</p>
+                                <a href="#" class="btn-shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Slider item 1 -->
+            <div class="inner-slider__item">
+               <img src="assets/images/slider/slider_3.jpg" alt="" />
+               <div class="caption">
+                    <div class="container">
+                        <div class="inner-caption">
+                            <div class="inner-caption__big-text">
+                                    <h1 class="first-line">Find Any
+                                    <span class="special-text">Medicine</span></h1>
+                                    <h1 class="second-line">You Need!</h1>
+                            </div>
+                            <div class="inner-caption__small-text">
+                                <p>Free Standard Shipping Everyday</p>
+                                <a href="#" class="btn-shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!-- slider controls -->
+        <div class="left-slide"><i class="ti-angle-left"></i></div>
+        <div class="right-slide"><i class="ti-angle-right"></i></div>
+        <!-- slider controls -->
+     </div>
+    <!-- Slider Section End -->
+
+    <!-- Fact Section Begin -->
+    <div class="fact-section">
+        <div class="container">
+            <div class="inner-fact">
+                <!-- Fact item 1 -->
+                <a href="#" class="inner-fact__item">
+                    <!-- Fact icon -->
+                    <div class="inner-fact__item--icon">
+                        <img src="assets/images/fact/shipping.png" alt="">
+                    </div>
+                    <!-- Fact text -->
+                    <div class="inner-fact__item--text">
+                        <span>Free Shipping</span>
+                        <span>Free shipping for all US order</span>
+                    </div>
+                </a>
+                <!-- Fact item 2 -->
+                <a href="#" class="inner-fact__item">
+                    <!-- Fact icon -->
+                    <div class="inner-fact__item--icon">
+                        <img src="assets/images/fact/support.png" alt="">
+                    </div>
+                    <!-- Fact text -->
+                    <div class="inner-fact__item--text">
+                        <span>Support 24/7</span>
+                        <span>We support 24 hours a day</span>
+                    </div>
+                </a>
+                <!-- Fact item 3 -->
+                <a href="#" class="inner-fact__item">
+                    <!-- Fact icon -->
+                    <div class="inner-fact__item--icon">
+                        <img src="assets/images/fact/return.png" alt="">
+                    </div>
+                    <!-- Fact text -->
+                    <div class="inner-fact__item--text">
+                        <span>30 Days Return</span>
+                        <span>You have 30 days to return</span>
+                    </div>
+                </a>
+                <!-- Fact item 4 -->
+                <a href="#" class="inner-fact__item">
+                    <!-- Fact icon -->
+                    <div class="inner-fact__item--icon">
+                        <img src="assets/images/fact/payment.png" alt="">
+                    </div>
+                    <!-- Fact text -->
+                    <div class="inner-fact__item--text special-text">
+                        <span>Secure Payments</span>
+                        <span>100% Secure & Safe</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fact Section End -->
+
+    <!-- Banner Section Begin -->
+    <div class="banner-section">
+        <div class="container">
+            <div class="inner-banner">
+                <!-- Banner big -->
+                <a href="#" class="inner-banner__big">
+                    <!-- Image of banner -->
+                    <img src="assets/images/banner/banner_1.jpg" alt="">
+                    <!-- Text in banner big -->
+                    <div class="inner-banner__big--text text-center">
+                        <div class="countdown-timer" id="countdown">
+                            <div class="cd-item">
+                                <span>230</span>
+                                <span>Days</span>
+                            </div>
+                            <div class="cd-item">
+                                <span>24</span>
+                                <span>Hrs</span>
+                            </div>
+                            <div class="cd-item">
+                                <span>40</span>
+                                <span>Mins</span>
+                            </div>
+                            <div class="cd-item">
+                                <span>60</span>
+                                <span>Sec</span>
+                            </div>
+                        </div>
+                        <div class="inner-banner__big--title">
+                            <h4 class="text-upper">Beauty & Cosmetics</h4>
+                            <h6>Sale up to <span>40%</span> off</h6>
+                        </div>
+                    </div>
+                </a>
+                <!-- Banner small -->
+                <div class="inner-banner__small">
+                    <!-- Banner small 1 -->
+                    <a href="#" class="inner-banner__small__item">
+                        <div class="inner-banner__small__item">
+                            <!-- Text in banner small 1-->
+                            <div class="inner-banner__small__item--text-1">
+                                <h2>30%</h2>
+                                <span class="text-upper">Discount</span>
+                                <h6>For Dietary Supplement</h6>
+                            </div>
+                            <!-- Image of banner -->
+                            <img class="bsf-img" src="assets/images/banner/banner_2.jpg" alt="">
+                        </div>
+                    </a>
+                    <!-- Banner small 2 -->
+                    <a href="#" class="inner-banner__small__item">
+                        <div class="inner-banner__small__item">
+                            <!-- Text in banner small 2-->
+                            <div class="inner-banner__small__item--text-2">
+                                <h4 class="text-upper">accessories</h4>
+                                <h6>Sale up to <span>20%</span> off</h6>
+                            </div>
+                            <!-- Image of banner -->
+                            <img class="bsf-iml" src="assets/images/banner/banner_3.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+    
+    <!-- Top Selling Section Begin -->
+    <div class="ts-section">
+        <!-- Top-selling title -->
+        <div class="ts__head">
+            <div class="container">
+                <div class="ts__head__inner">
+                    <div class="ts__head__inner__title">
+                        <h3 class="text-upper">Top Selling</h3>
+                        <span class="text-upper">Products</span>
+                    </div>
+                    <!-- Button next & Prev-->
+                    <div class="ts__head__inner__button">
+                        <i class="ti-angle-left ts-left"></i>
+                        <i class="ti-angle-right ts-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top-selling items 1 -->
+        <div class="ts__items">
+            <div class="ts__items__inner active">
+                <div class="container">
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_1.jpg" alt="" />
+                                </div>
+                                
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Nature's Bounty Biotin 10000 MCG</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_2.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Best Colon Detox Formula Advanced Colon</p>
+                                    <span class="item__text__price"><span>$35.00</span>$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_3.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Natural Factors Vitamin C Blueberry Rasp</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_4.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Jarrow Formulas Methylcobalamin</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_5.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Nature's Bounty Biotin 10000 MCG ...</p>
+                                    <span class="item__text__price"> $30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_6.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Best Colon Detox Formula Advanced Colon</p>
+                                    <span class="item__text__price"> $30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 7 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_7.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Natural Factors Vitamin C Blueberry Rasp...</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 8 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_8.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Jarrow Formulas Methylcobalamin</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Top Selling Item 1 -->
+
+        <!-- Top-selling items 2 -->
+            <div class="ts__items__inner">
+                <div class="container">
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_8.jpg" alt="" />
+                                </div>
+                                
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Jarrow Formulas Methylcobalamin</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_7.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Natural Factors Vitamin C Blueberry Rasp... </p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_6.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Natural Factors Vitamin C Blueberry Rasp</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_5.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Jarrow Formulas Methylcobalamin</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_4.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Nature's Bounty Biotin 10000 MCG ...</p>
+                                    <span class="item__text__price"> $30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_3.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Best Colon Detox Formula Advanced Colon</p>
+                                    <span class="item__text__price"> $30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 7 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_2.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Best Colon Detox Formula Advanced Colon</p>
+                                    <span class="item__text__price"><span>$35.00</span>$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 8 -->
+                        <div class="item">
+                            <a href="#" class="item-inner">
+                                <div class="item__image">
+                                    <img src="assets/images/topsell/topsell_1.jpg" alt="" />
+                                </div>
+                                <div class="item__text text-center">
+                                    <p class="item__text__title">Nature's Bounty Biotin 10000 MCG</p>
+                                    <span class="item__text__price">$30.00</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Selling Item 2 -->
+    </div>
+    <!-- Top Selling Section End -->
+
+    <!-- News Section Begin-->
+    <div class="news-section">
+        <div class="news-image">
+            <img src="assets/images/news/bg.jpg" alt="" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="inner-news">
+                    <!-- News title -->
+                    <div class="inner-news__news-title">
+                            <div class="bg-text text-upper">Hot News</div>
+                            <span class="main-text text-upper">Latest News</span>
+                    </div>
+                        <!-- News main section -->
+                    <div class="news-main">
+                        <!-- News 1 -->
+                        <a href="#" class="item">
+                            <div class="item-inner">
+                                <div class="item-inner__image">
+                                    <img src="assets/images/news/news_1.jpg" alt="...">
+                                </div>
+                                <div class="item-inner__text">
+                                    <p class="item-inner__text__title">Probiotics may help battle antibiotic resistance Probiotics may help</p>
+                                    <span class="item-inner__text__date">14 June 2018 by <span>Admin</span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- News 2 -->
+                        <a href="#" class="item">
+                            <div class="item-inner">
+                                <div class="item-inner__image">
+                                    <img src="assets/images/news/news_2.jpg" alt="...">
+                                </div>
+                                <div class="item-inner__text">
+                                    <p class="item-inner__text__title">Study overturns what we know about kidney stones</p>
+                                    <span class="item-inner__text__date">14 June 2018 by <span>Admin</span></span>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- News 3 -->
+                        <a href="#" class="item">
+                            <div class="item-inner">
+                                <div class="item-inner__image">
+                                    <img src="assets/images/news/news_3.jpg" alt="...">
+                                </div>
+                                <div class="item-inner__text">
+                                    <p class="item-inner__text__title">Hair loss: Scientists test wearable re-growth device</p>
+                                    <span class="item-inner__text__date">14 June 2018 by <span>Admin</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News Section End -->
+
+    <!-- Newsletter Section Begin -->
+    <div class="newsletter-section">
+        <div class="newsletter-image">
+            <img src="assets/images/newsletter/bg-img.jpg" alt="" />
+        </div>
+        <div class="inner-newsletter">
+            <div class="container">
+                <!-- Newsletter title -->
+                <div class="inner-newsletter__text text-center">
+                    <span class="inner-newsletter__text--big">Keep Updated & Get Unlimited Discount</span><br>
+                    <span class="inner-newsletter__text--small">Sign up for our newsletter to receive updates and exclusive offers</span>
+                </div>
+                <!-- Newsletter form -->
+                <div class="inner-newsletter__form text-center">
+                    <input type="text" placeholder="Enter your email address here">
+                    <button type="button" class="btn text-upper">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Section End -->
+
+    <!-- Brand Section Begin -->
+    <div class="brand-logo">
+        <div class="container">
+            <div class="row">
+                <div class="inner-brand">
+                    <!-- Brand 1 -->
+                    <a href="" class="inner-brand__item">
+                        <img src="assets/images/brand/brands_1.png" alt="">
+                    </a>
+                    <!-- Brand 2 -->
+                    <a href="#" class="inner-brand__item">
+                        <img src="assets/images/brand/brands_2.png" alt="">
+                    </a>
+                    <!-- Brand 3 -->
+                    <a href="#" class="inner-brand__item">
+                        <img src="assets/images/brand/brands_3.png" alt="">
+                    </a>
+                    <!-- Brand 4 -->
+                    <a href="#" class="inner-brand__item">
+                        <img src="assets/images/brand/brands_4.png" alt="">
+                    </a>
+                    <!-- Brand 5 -->
+                    <a href="#" class="inner-brand__item">
+                        <img src="assets/images/brand/brands_5.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand Section End -->
+
+    <!-- Footer Section Begin -->
+    <div class="footer">
+        <div class="footer-infor">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-infor__inner">
+                        <!-- Contact us section -->
+                        <div class="footer-infor__inner__items">
+                            <h5 class="text-upper">Contact Us</h5>
+                            <ul>
+                                <li >
+                                    <a href="#" class="item">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>Lorem Ipsum has been the indus- try's standard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:contact@medic.com" class="item">
+                                        <i class="fa fa-envelope"></i>
+                                        <span>contact@medic.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+84(1)234567891" class="item">
+                                        <i class="fa fa-mobile"></i>
+                                        <span>+84 (1) 234 567 891</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Social link section-->
+                            <div class="footer-social">
+                                <a href="https://www.facebook.com/vtearit"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/vtearit"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a>
+                                <a href="https://www.instagram.com/vtearit"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <!-- Company section -->
+                        <div class="footer-infor__inner__items">
+                            <h5 class="text-upper">Company</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Team Member</a></li>
+                                <li><a href="#">Carrer</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Affilate</a></li>
+                            </ul>
+                        </div>
+                        <!-- Categories section -->
+                        <div class="footer-infor__inner__items">
+                            <h5 class="text-upper">Categories</h5>
+                            <ul>
+                                <li><a href="#">Home Medicine</a></li>
+                                <li><a href="#">Baby & Child</a></li>
+                                <li><a href="#">Diet & Nutrition</a></li>
+                                <li><a href="#">Beauty</a></li>
+                                <li><a href="#">Fitness & Vitamins</a></li>
+                            </ul>
+                        </div>
+                        <!-- Quick link section -->
+                        <div class="footer-infor__inner__items">
+                            <h5 class="text-upper">Quick Links</h5>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Store Location</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright section -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="footer-copyright__inner">
+                    <div class="footer-copyright__inner__text">
+                        @2018 Design by <a href="">Creative Wp</a>. All Rights Reserved.
+                    </div>
+                    <div class="footer-copyright__inner__payment-pic">
+                        <img src="assets/images/brand/copyright.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/jquery.dd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/less.js"></script>
+
+    <!-- Navigation Js -->>
+    <script>
+        function nav_menu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "inner-hv__menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "inner-hv__menu";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
